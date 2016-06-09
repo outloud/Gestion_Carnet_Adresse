@@ -1,0 +1,29 @@
+contacts_index:
+    path:     /
+    defaults: { _controller: "CarnetBundle:Contacts:index" }
+    methods:  GET
+
+contacts_show:
+    path:     /{id}/show
+    defaults: { _controller: "CarnetBundle:Contacts:show" }
+    methods:  GET
+
+contacts_new:
+    path:     /new
+    defaults: { _controller: "CarnetBundle:Contacts:new" }
+    methods:  [GET, POST]
+
+contacts_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "CarnetBundle:Contacts:edit" }
+    methods:  [GET, POST]
+
+contacts_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "CarnetBundle:Contacts:delete" }
+    methods:  DELETE
+
+
+create_user:
+    path:     /{id}/createUser
+    defaults: { _controller: "CarnetBundle:Contacts:createUser" }

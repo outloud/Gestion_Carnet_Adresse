@@ -1,0 +1,25 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    <div class="container" xmlns="http://www.w3.org/1999/html">
+        <div class="row">
+            <div class="span3">
+                {% include 'UserBundle:Default:modulesUsed/utilisateursConnecte.html.twig' %}
+            </div>
+            <div class="span9">
+                <h2>Details du contact</h2>
+                <div id="collapseOne" class="accordion-body collapse in">
+                    <div class="accordion-inner">
+
+                        {{ form_start(edit_form) }}
+                        {{ form_widget(edit_form) }}
+                        <input class="btn btn-primary" type="submit" value="Modifier" /><br/>
+                        <a href="{{ path('contacts_index') }}"><i class="icon-arrow-left" ></i>Retour à la liste</a>
+                        {{ form_end(edit_form) }}
+                        <br/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
