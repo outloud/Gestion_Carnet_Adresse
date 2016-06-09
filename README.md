@@ -1,4 +1,2 @@
-symfony2.8
-==========
-
-A Symfony project created on June 8, 2016, 7:37 pm.
+# Gestion_Carnet_Adresse
+Un petit outil pour gérer son carnet d'adresses 
